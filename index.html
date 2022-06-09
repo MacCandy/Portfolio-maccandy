@@ -1,0 +1,634 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111">
+
+
+    <title>Portfolio-M.Ilersaint</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/sr2myEY.jpg">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700|Fredoka+One);
+
+        .home h3 {
+            font-family: 'Fredoka One';
+        }
+
+        .home h1 {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 50pt;
+            margin-top: 130px;
+            color: #fff;
+            padding-bottom: 25px;
+        }
+
+        .home ul {
+            margin-top: 10px;
+        }
+
+        .home a {
+            font-family: 'Roboto';
+            color: #fff;
+            text-shadow: 1px 1px 7px #949494;
+            -webkit-transition: background-color 0.7s ease-out;
+            -moz-transition: background-color 0.7s ease-out;
+            -o-transition: background-color 0.7s ease-out;
+            transition: background-color 0.7s ease-out;
+        }
+
+        .home {
+            background-image: url('https://i.imgur.com/NxxscUm.jpg');
+            background-size: 100%;
+        }
+
+        .social a {
+            -webkit-transition: background-color 0.7s ease-out;
+            -moz-transition: background-color 0.7s ease-out;
+            -o-transition: background-color 0.7s ease-out;
+            transition: background-color 0.7s ease-out;
+            padding: 10px 3px 10px 3px;
+            margin-left: 10px;
+            border-radius: 4px;
+        }
+
+        .social a:hover {
+            background-color: #EEEEEE;
+        }
+
+        .social {
+            margin-left: 37.33%;
+            padding-bottom: 150px;
+        }
+
+        .home .btn {
+            background: none;
+            border: 3px solid #fff;
+            border-radius: 0px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+            -webkit-transition: background-color 0.7s ease-out;
+            -moz-transition: background-color 0.7s ease-out;
+            -o-transition: background-color 0.7s ease-out;
+            transition: background-color 0.7s ease-out;
+        }
+
+        .home .btn:hover {
+            background-color: #fff;
+        }
+
+        .col-md-offset-6 {
+            margin-left: 48%;
+            padding-top: 0px;
+        }
+
+        .quote {
+            background-color: #fff;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .quote h2 {
+            font-family: 'Roboto';
+            font-weight: 700;
+            color: black;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .skills {
+            background-color: #F7F7F7;
+            padding-bottom: 40px;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .skills hr {
+            width: 10%;
+            height: 2px;
+            background-color: #CECECE;
+        }
+
+        .hr {
+            width: 70%;
+            height: 2px;
+            background-color: #CECECE;
+        }
+
+        .skills h2,
+        .skills p {
+            font-family: 'Roboto';
+            font-weight: 400;
+        }
+
+        .skills img {
+            height: 100px;
+            margin-top: 70px;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        .skills p {
+            font-family: 'Roboto';
+        }
+
+        .quote1 {
+            background-image: url('https://i.imgur.com/NJhhs53.jpg');
+            background-size: cover;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .quote1 h2 {
+            color: #fff;
+            font-family: 'Roboto';
+        }
+
+        .about {
+            background-color: #26C58B;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .about img {
+            border: 6px solid #2BE4A0;
+            padding: 0px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .me {
+            margin-top: 40px;
+        }
+
+        .hello {
+            margin-top: 55px;
+            margin-bottom: 60px;
+        }
+
+        .about hr {
+            width: 10%;
+            height: 2px;
+            background-color: #CECECE;
+            border-top: 0px;
+        }
+
+        .about p {
+            line-height: 28px;
+            font-family: 'Roboto';
+        }
+
+        .portfolio {
+            background-color: #FFDD99;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .portfolio h2 {
+            margin-top: 40px;
+            font-family: 'Roboto';
+        }
+
+        .portfolio hr {
+            width: 10%;
+            height: 2px;
+            background-color: #CECECE;
+            border-top: 0px;
+        }
+
+        .laptop {
+            margin-top: 70px;
+        }
+
+        .laptop p {
+            font-family: 'Roboto';
+        }
+
+        .contact {
+            background-color: #3C5499;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .contact h2 {
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        .contact input {
+            margin-top: 60px;
+        }
+
+        .contact input,
+        textarea {
+            border: 0px;
+            background-color: #273A71;
+            border-radius: 2px;
+            color: #fff;
+            padding: 10px 10px 10px 10px;
+        }
+
+        textarea {
+            margin-top: 30px;
+            width: 645px;
+            height: 130px;
+        }
+
+        .submit {
+            margin-top: 40px;
+            margin-left: 38.333%;
+            background-color: #30BAE7;
+            border: 1px solid #3783BD !important;
+            margin-bottom: 20px;
+        }
+
+        .contact hr {
+            width: 10%;
+            height: 2px;
+            background-color: #CECECE;
+            border-top: 0px;
+        }
+
+        footer {
+            background-color: #344B8E;
+            padding: 15px;
+        }
+
+        footer p {
+            color: #fff;
+            font-family: 'Roboto';
+            font-size: 1.2em;
+            margin-bottom: 0px;
+        }
+
+        .style .col-md-8 {
+            background-color: #efefef;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: 'Roboto';
+            -webkit-box-shadow: 15px 15px 40px 15px #474745;
+            box-shadow: 15px 15px 40px 15px #474745;
+            -webkit-box-shadow: inset 0 15px 10px -9px #787878;
+            box-shadow: inset 0 15px 10px -9px #787878;
+        }
+
+        .paraf {
+            margin-top: 20px;
+        }
+
+        .style a {
+            color: #5D5D5D;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+        .style a:hover {
+            text-decoration: none;
+            background-color: #333333;
+            color: #fff;
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        .close {
+            font-size: 40px;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            right: auto;
+            width: 100%;
+            height: 100%;
+            background-color: #444;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+        }
+
+        .style {
+            position: fixed;
+            top: 35vh;
+            right: auto;
+        }
+
+        .popup,
+        .billpop,
+        .calcpop,
+        .twichpop,
+        .pomodoropop,
+        .quotepop,
+        .simonpop,
+        .tictacpop {
+            display: none;
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <div class="home">
+        <div class="container">
+            <h3 class="col-md-6">Mac Candy</h3>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#skill">Veille Technologique</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#portfolio">Projet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 class="col-md-8 col-md-offset-2 text-center">Developpeur Web</h1>
+            <div class="social col-md-4 col-md-offset-4">
+                <a href="/" target="_blank">
+                    <a href="/" target="_blank">
+                        <a href="/" target="_blank">
+                            <a href="/" target="_blank">
+            </div>
+            <a class="btn col-md-offset-6" href="#skill">⌄</a>
+        </div>
+        <div class="quote">
+            <div class="container">
+                <h2 class="col-md-10 col-md-offset-1 text-center">
+                </h2>
+            </div>
+        </div>
+        <div class="skills" id="skill">
+            <div class="container">
+                <a href="file:///C:/Users/chris/Desktop/porfolio/Pr%C3%A9sentation-sans-titre.pdf">
+                    <h2 class="text-center">Veille Technologique</h2>
+                </a>
+                <hr>
+                <p class="text-center">Ma veille technologique et les outils utiliser.</p>
+                <div class="html col-md-3 text-center">
+
+                    <h4>Ma veille</h4>
+                    <hr>
+                    <p class="text-justify"><b>JavaScript</b>,Comme sujet de veille technolique j'ai choisis le language
+                        de programmation JavaScript car c'est un language polyvalent et je voulais en savoir plus.</p>
+                </div>
+                <div class="css col-md-3 text-center">
+
+                    <h4>Google alert</h4>
+                    <hr>
+                    <p class="text-justify"><b>Google alert</b> j'ai mis une Google alert pour reçevoir un mail dès
+                        qu'il y'a des nouvauté à propos de JavaSCript.
+                    </p>
+                </div>
+                <div class="js col-md-3 text-center">
+
+                    <h4>Réseaux sociaux</h4>
+                    <hr>
+                    <p class="text-justify"><b>Réseaux Sociaux</b> j'utilise les réseaux sociaux afin de m'informer sur
+                        les nouvauté sur JavaScript.
+                    </p>
+                </div>
+                <div class="jquery col-md-3 text-center">
+
+                    <h4>Actualité</h4>
+                    <hr>
+                    <p class="text-justify"><b>Actualité</b>Le site Silicon est très bien pour parler de l'actualité de
+                        JavaSCript. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote1">
+            <div class="container">
+                <h2 class="col-md-10 col-md-offset-1 text-center">
+                </h2>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="container">
+                <h2 class="text-center me">A propos</h2>
+                <hr>
+                <img src="" class="col-md-3 img-circle">
+                <h2 class="col-md-9 hello">Salut,</h2>
+                <p class="col-md-7">Je m’appelle Mac Candy Ilersaint, j’ai 19 ans et je
+                    suis actuellement étudiant en 1er année de BTS Services informatiques aux Organisations (BTS SIO)
+                    dans la spécialité de Solutions Logicielles et Applications Métier (SLAM) à l'école Insta dans le
+                    5ème arrondissement de paris. J’ai commencé à m'intéresser à l’informatique durant mon année de
+                    seconde professionnel. Je me suis dirigé vers un BAC PRO Système Numérique (SN) option RISC (Réseau
+                    Informatique des Systèmes Communicant) au lycée professionnel les cotes de villebon à
+                    Meudon-la-forêt.</p>
+            </div>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="text-center">Mes projets</h2>
+                <hr>
+                <img src="logofinis1.png" alt="AI image" />
+
+
+                <div class="contact" id="contact">
+                    <div class="container">
+                        <h2 class="text-center">Contactez moi</h2>
+                        <hr>
+                        <input type="text" name="name" class="col-md-3 col-md-offset-2" placeholder="Nom">
+                        <input type="text" name="name" class="col-md-3 col-md-offset-1" placeholder="Mail">
+                        <textarea name="Text1" class="col-md-7 col-md-offset-2 message"
+                            placeholder="Message"></textarea>
+                        <input type="submit" name="submit" value="Envoyer" class="col-md-2 col-md-offset-4 submit">
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="container">
+                        <p>© Copyright ILERSAINT Mac Candy. Tous droits réservés.</p>
+                    </div>
+                </footer>
+
+                <div class="popup">
+                </div>
+
+                <div class="container billpop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/ephdLuC.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> Tribute page</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> Tribute page about Bill Gates. You can find basic information about him. Read
+                            his
+                            timeline, find quotes. Link to Wikipedia page.</p>
+                        <p><a href="https://codepen.io/kenant/full/mEPaNm/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+
+                <div class="container calcpop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/5L6mgYl.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> Calculator</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> Calculator with basic function. You can use addition, subtraction,
+                            multiplication,
+                            division</p>
+                        <p><a href="https://codepen.io/kenant/full/EygrZz/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+
+                <div class="container twichpop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/t1LzPR2.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> TwichTv Stream</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> TwichTv stream is site on which you can see which channel currently streaming
+                            on
+                            Twitch.tv. You have navigation to see who is online now.</p>
+                        <p><a href="https://codepen.io/kenant/full/pbEpOd/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+
+                <div class="container pomodoropop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/5SIIVPn.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> Pomodoro</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> You can set up your working and break time. Default is 25 minutes for work time
+                            and 5
+                            minutes for break time. this is classic pomodoro clock.</p>
+                        <p><a href="https://codepen.io/kenant/full/ZOpZZo/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+
+                <div class="container quotepop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/Saa1WJK.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> Random Quote</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> This is random quote site. You can read random quotes. Click on button to get
+                            new
+                            quote. On twitter button can twieet current quote</p>
+                        <p><a href="https://codepen.io/kenant/full/oLLwVQ/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+
+                <div class="container simonpop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/0fGgSkF.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> Simon Game</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> This is classic Simon game. You can play it in two modes: normal and strict
+                            mode. </p>
+                        <p><a href="https://codepen.io/kenant/full/LkyYwR/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+
+                <div class="container tictacpop style">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="https://i.imgur.com/ZYShNaM.jpg" class="col-md-6">
+                        <p class="paraf"><b>Website Name:</b> Tic-Tac Toe Game</p>
+                        <p><b>Coded:</b> Kenan</p>
+                        <p><b>Using:</b> HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, JQUERY</p>
+                        <p><b>About:</b> This is classic Tic-Tac Toe game. You can choose X or O. When you finish your
+                            game it
+                            will be reset automaticly.</p>
+                        <p><a href="https://codepen.io/kenant/full/Nrbdpe/" target="_blank">Visit site<span
+                                    class="glyphicon glyphicon-share"></span></a></p>
+                        <span class="glyphicon glyphicon-remove-circle close"></span>
+                    </div>
+                </div>
+                <script
+                    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+                <script id="rendered-js">
+                    $(document).ready(function () {
+
+                        $(document).scroll(function () {
+                            var scrool = $(document).scrollTop();
+                            var sliba = $('#skill').offset().top - 300;
+                            if (scrool >= sliba) {
+
+                                $(".skills img").fadeIn(1200);
+
+                            }
+                        });
+                        $('.laptop img').bind('mouseenter mouseleave', function () {
+                            $(this).attr({
+                                src: $(this).attr('data-other-src'),
+                                'data-other-src': $(this).attr('src')
+                            });
+
+                        });
+
+                        $('.laptop img').on('click', function () {
+
+                            var slika = $(this).attr('value');
+                            $('.popup').fadeIn(200);
+                            $('.' + slika).fadeIn(200);
+                            $('.close').on('click', function () {
+                                $('.popup').slideUp(200);
+                                $('.' + slika).slideUp(200);
+                            });
+
+                        });
+                    });
+  //# sourceURL=pen.js
+                </script>
+
+
+
+
+
+
+
+            </div>
+</body>
+
+</html>
